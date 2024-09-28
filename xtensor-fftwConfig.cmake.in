@@ -33,6 +33,6 @@ if(NOT FFTW_USE_FLOAT AND NOT FFTW_USE_DOUBLE AND NOT FFTW_USE_LONG_DOUBLE)
 endif()
 
 set(PN xtensor-fftw)
-set_and_check(${PN}_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_INCLUDEDIR@")
+set_and_check(${PN}_INCLUDE_DIRS "@CMAKE_INSTALL_FULL_INCLUDEDIR@")
 set(${PN}_LIBRARY "")
 check_required_components(${PN})
